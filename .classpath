@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry excluding="Q1_02_Check_Permutation/" kind="src" path="Ch 01. Arrays and Strings"/>
+	<classpathentry excluding="Q1_02_Check_Permutation/|Q1_03_URLify/" kind="src" path="Ch 01. Arrays and Strings"/>
 	<classpathentry kind="src" path="Ch 01. Arrays and Strings/Q1_02_Check_Permutation"/>
-	<classpathentry kind="src" path="Q1_03_URLify"/>
+	<classpathentry kind="src" path="Ch 01. Arrays and Strings/Q1_03_URLify"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
