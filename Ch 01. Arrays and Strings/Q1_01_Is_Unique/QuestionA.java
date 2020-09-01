@@ -1,27 +1,29 @@
-// 중복이 없는가: 문자열이 주어졌을 때, 이 문자열에 같은 문자가 중복되어 등장하는지 확인하는 알고리즘을 작성하라. 
-// 자료 구조를 추가로 사용하지 않고 풀 수 있는 알고리즘 또한 고민하라.
-// Hint 1: hashtable 을 이용해보라
-// Hint 2: 비트 벡터가 유용한가?
-// Hint 3: O(N log N) 시간 안에 풀 수 있겠는가?
+// ì¤‘ë³µì�´ ì—†ëŠ”ê°€: ë¬¸ìž�ì—´ì�´ ì£¼ì–´ì¡Œì�„ ë•Œ, ì�´ ë¬¸ìž�ì—´ì—� ê°™ì�€ ë¬¸ìž�ê°€ ì¤‘ë³µë�˜ì–´ ë“±ìž¥í•˜ëŠ”ì§€ í™•ì�¸í•˜ëŠ” ì•Œê³ ë¦¬ì¦˜ì�„ ìž‘ì„±í•˜ë�¼. 
+// ìž�ë£Œ êµ¬ì¡°ë¥¼ ì¶”ê°€ë¡œ ì‚¬ìš©í•˜ì§€ ì•Šê³  í’€ ìˆ˜ ìžˆëŠ” ì•Œê³ ë¦¬ì¦˜ ë˜�í•œ ê³ ë¯¼í•˜ë�¼.
+// Hint 1: hashtable ì�„ ì�´ìš©í•´ë³´ë�¼
+// Hint 2: ë¹„íŠ¸ ë²¡í„°ê°€ ìœ ìš©í•œê°€?
+// Hint 3: O(N log N) ì‹œê°„ ì•ˆì—� í’€ ìˆ˜ ìžˆê² ëŠ”ê°€?
 package Q1_01_Is_Unique;
 
-public Boolean isUniqueChars(String word) {
-	//char을 해쉬 테이블로 구성.
-	//그다음에 그걸 가지고 리턴 함
-	Boolean[] hash_table = new Boolean[26];
-	
-	for(int i=0;i<word.length;i++) {
-		if(Boolean[word.charAt(i)-'a'] != null) return false;
-		else {
-			Boolean[word.charAt(i)-'a'] = true;
-		}
-	}
-	return true;
-}
 
-public class QuestionA{
-	String[] words = {"abcde", "hello", "apple", "kite", "padle"};
-	for(String a_word: wrods) {
-		System.out.println(a_word + " is " + isUniqueChars(words));	
+class QuestionA{
+	public Boolean isUniqueChars(String word) {
+		//charì�„ í•´ì‰¬ í…Œì�´ë¸”ë¡œ êµ¬ì„±.
+		//ê·¸ë‹¤ì�Œì—� ê·¸ê±¸ ê°€ì§€ê³  ë¦¬í„´ í•¨
+		Boolean[] hash_table = new Boolean[26];
+		
+		for(int i=0;i<word.length;i++) {
+			if(Boolean[word.charAt(i)-'a'] != null) return false;
+			else {
+				Boolean[word.charAt(i)-'a'] = true;
+			}
+		}
+		return true;
+	}
+	public static void main() {
+		String[] words = {"abcde", "hello", "apple", "kite", "padle"};
+		for(String a_word: wrods) {
+			System.out.println(a_word + " is " + isUniqueChars(words));	
+		}
 	}
 }
