@@ -11,12 +11,13 @@ public class Question {
 		char[] cahrArray = st.toCharArray();
 		
 		for(int i=st.length()-1; i>=0;i--) {
-			if (Character.compare(st.charAt(i), ans.charAt(0))==0){
-				
+			if (st.charAt(i)==' '){
+				st.replace(" ", "%20");
+				ans = "%20"+ ans;
 			}
+			else
+				ans = Character.toString(st.charAt(i))+ans;
 		}
-		
-		
 		return ans;
 	}
 	
@@ -25,7 +26,7 @@ public class Question {
 		String st = "Mr John Smith";
 		int num =  13;
 		
-		System.out.println(func(st, num));
+		System.out.println("answer is "+ func(st, num));
 		
 
 	}
