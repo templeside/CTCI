@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry excluding="Q1_02_Check_Permutation/|Q1_03_URLify/|Q1_04_Palindrome_Permutation/|Q1_05_One_Away/" kind="src" path="Ch 01. Arrays and Strings"/>
+	<classpathentry excluding="Q1_02_Check_Permutation/|Q1_03_URLify/|Q1_04_Palindrome_Permutation/|Q1_05_One_Away/|Q1_06_String_Compression/" kind="src" path="Ch 01. Arrays and Strings"/>
 	<classpathentry kind="src" path="Ch 01. Arrays and Strings/Q1_02_Check_Permutation"/>
 	<classpathentry kind="src" path="Ch 01. Arrays and Strings/Q1_03_URLify"/>
 	<classpathentry kind="src" path="Ch 01. Arrays and Strings/Q1_04_Palindrome_Permutation"/>
 	<classpathentry kind="src" path="Ch 01. Arrays and Strings/Q1_05_One_Away/"/>
+	<classpathentry kind="src" path="Ch 01. Arrays and Strings/Q1_06_String_Compression/"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
